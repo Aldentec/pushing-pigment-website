@@ -1,0 +1,281 @@
+.tutorials-page {
+  padding-top: 80px;
+}
+
+.tutorials-hero {
+  background: var(--bg-light);
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}
+
+.tutorials-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.tutorials-description {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tutorials-content {
+  padding-bottom: 4rem;
+}
+
+.filter-section {
+  margin-bottom: 1rem;
+}
+
+.filter-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  transform: translateY(-1px);
+}
+
+.results-badge {
+  font-size: 0.875rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  background: var(--bg-light) !important;
+  color: var(--text-light) !important;
+  border: 1px solid var(--border-color);
+}
+
+.tutorial-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  background: white;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.tutorial-image-container {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tutorial-image-placeholder {
+  text-align: center;
+}
+
+.tutorial-icon {
+  font-size: 4rem;
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tutorial-badges {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.difficulty-badge,
+.duration-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+}
+
+.category-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  background: var(--bg-light) !important;
+  color: var(--text-light) !important;
+  border: 1px solid var(--border-color);
+}
+
+.tutorial-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tutorial-description {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tutorial-skills {
+  margin-bottom: 1rem;
+}
+
+.skills-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-bottom: 0.25rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.skills-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.tutorial-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.meta-icon {
+  font-size: 1rem;
+}
+
+.tutorial-btn {
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.tutorial-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+  filter: brightness(1.1);
+}
+
+.no-tutorials {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.no-tutorials-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.no-tutorials h4 {
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.no-tutorials p {
+  margin-bottom: 2rem;
+}
+
+/* Animation for tutorial cards */
+.tutorial-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .tutorials-title {
+    font-size: 2.5rem;
+  }
+  
+  .tutorials-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tutorials-hero {
+    padding: 3rem 0;
+  }
+  
+  .tutorials-title {
+    font-size: 2rem;
+  }
+  
+  .tutorials-description {
+    font-size: 1rem;
+  }
+  
+  .filter-buttons {
+    justify-content: center;
+  }
+  
+  .tutorial-image-container {
+    height: 160px;
+  }
+  
+  .tutorial-icon {
+    font-size: 3rem;
+  }
+  
+  .no-tutorials-icon {
+    font-size: 3rem;
+  }
+}

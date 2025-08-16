@@ -1,0 +1,109 @@
+/* Home Page Styles */
+
+.home-page {
+  /* Base styles */
+}
+
+/* Quick Start Section */
+.quick-start-section {
+  background: white;
+}
+
+.quick-start-buttons {
+  margin-top: 2rem;
+}
+
+/* Features Section */
+.features-section {
+  background: var(--bg-light);
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.feature-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0;
+  border: none;
+  background: none;
+  transition: color 0.3s ease;
+}
+
+.feature-link:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+  
+  .quick-start-buttons .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .quick-start-buttons .btn:last-child {
+    margin-bottom: 0;
+  }
+}

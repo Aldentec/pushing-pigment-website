@@ -1,0 +1,183 @@
+.custom-navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+.custom-navbar.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+.brand-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.brand-logo:hover {
+  text-decoration: none;
+  transform: scale(1.02);
+}
+
+/* Logo container with fallback logic */
+.logo-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  max-width: 40px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.custom-navbar.scrolled .navbar-logo {
+  height: 35px;
+}
+
+.custom-navbar.scrolled .logo-container {
+  width: 35px;
+  height: 35px;
+}
+
+/* Fallback paintbrush icon */
+.paintbrush-icon-fallback {
+  font-size: 1.8rem;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Behind the image, shows only if image fails */
+}
+
+.custom-navbar.scrolled .paintbrush-icon-fallback {
+  font-size: 1.6rem;
+}
+
+/* If you want to force show only the emoji (for testing) */
+.logo-container.force-emoji .navbar-logo {
+  display: none !important;
+}
+
+.logo-container.force-emoji .paintbrush-icon-fallback {
+  z-index: 1;
+}
+
+.brand-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.brand-text {
+  color: var(--text-dark);
+}
+
+.brand-accent {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: var(--text-dark) !important;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+  background: var(--bg-light);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--primary-color) !important;
+  background: var(--bg-light);
+}
+
+.navbar-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2831, 41, 55, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991px) {
+  .custom-navbar {
+    padding: 0.75rem 0;
+  }
+  
+  .navbar-nav .nav-link {
+    margin: 0.25rem 0;
+    text-align: center;
+  }
+  
+  .navbar-nav .nav-link.active::after {
+    display: none;
+  }
+  
+  .logo-container {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .navbar-logo {
+    height: 35px;
+  }
+  
+  .paintbrush-icon-fallback {
+    font-size: 1.6rem;
+  }
+  
+  .brand-text-container {
+    flex-direction: column;
+    gap: 0;
+    line-height: 1;
+  }
+  
+  .brand-text, .brand-accent {
+    font-size: 0.9rem;
+  }
+}
