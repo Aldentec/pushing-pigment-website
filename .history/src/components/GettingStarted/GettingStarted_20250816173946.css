@@ -1,0 +1,688 @@
+/* Enhanced Getting Started Component Styles */
+:root {
+  --entry-color: #28a745;
+  --mid-color: #ffc107;
+  --professional-color: #dc3545;
+  --entry-bg: rgba(40, 167, 69, 0.1);
+  --mid-bg: rgba(255, 193, 7, 0.1);
+  --professional-bg: rgba(220, 53, 69, 0.1);
+}
+
+.getting-started-section {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, var(--bg-light) 0%, white 50%, var(--bg-light) 100%);
+}
+
+/* Level Selector Styles */
+.level-selector-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  background: white;
+  margin-bottom: 2rem;
+}
+
+.level-selector-card .nav-pills .nav-link {
+  border-radius: 12px;
+  margin: 0 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.level-selector-card .nav-pills .nav-link:not(.active) {
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.level-selector-card .nav-pills .nav-link:not(.active):hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.level-selector-card .nav-pills .nav-link.active {
+  background: var(--gradient-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.level-badge {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* Step Cards */
+.step-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.step-number {
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.step-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.step-description {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Detailed Step Sections */
+.detailed-step-section {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.step-number-large {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  min-width: 100px;
+  text-align: center;
+}
+
+.step-header-content {
+  flex: 1;
+}
+
+.step-icon-large {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.step-main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.step-main-description {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Level Section Cards */
+.level-section-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.level-header {
+  padding: 1.5rem;
+  color: white;
+  border: none;
+}
+
+.level-header-entry {
+  background: linear-gradient(135deg, var(--entry-color), #20c997);
+}
+
+.level-header-mid {
+  background: linear-gradient(135deg, var(--mid-color), #fd7e14);
+}
+
+.level-header-professional {
+  background: linear-gradient(135deg, var(--professional-color), #e83e8c);
+}
+
+.level-description {
+  opacity: 0.9;
+  font-size: 0.95rem;
+  color: white;
+}
+
+/* Tips Card */
+.tips-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  height: fit-content;
+}
+
+.tips-card .card-header {
+  background: var(--gradient-primary);
+  color: white;
+  border-radius: 12px 12px 0 0;
+  padding: 1rem 1.5rem;
+}
+
+.tips-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.tips-list li {
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+.tips-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Product Link Cards with Images */
+.product-link-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.product-link-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.product-image-container {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: var(--bg-light);
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-link-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-light);
+}
+
+.placeholder-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+.placeholder-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.product-link-card .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+}
+
+.product-category {
+  margin-bottom: 0.5rem;
+}
+
+.category-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  background: var(--bg-light) !important;
+  color: var(--text-light) !important;
+  border: 1px solid var(--border-color);
+}
+
+.product-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-description {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.original-price {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  text-decoration: line-through;
+  margin-top: 0.1rem;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.rating {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.review-count {
+  color: var(--text-light);
+  font-size: 0.75rem;
+}
+
+.amazon-link-btn {
+  background: #ff9900;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s ease;
+  color: white;
+  white-space: nowrap;
+}
+
+.amazon-link-btn:hover {
+  background: #e68900;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+  color: white;
+}
+
+/* Budget Summary */
+.budget-summary-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  background: white;
+}
+
+.budget-summary-card .card-header {
+  background: var(--gradient-primary);
+  color: white;
+  border-radius: 16px 16px 0 0;
+  padding: 1.5rem;
+}
+
+.budget-breakdown {
+  margin-bottom: 1.5rem;
+}
+
+.budget-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.budget-item:last-child {
+  border-bottom: none;
+}
+
+.budget-label {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.budget-amount {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.budget-note {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Comparison Table */
+.comparison-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.comparison-card .card-header {
+  background: var(--gradient-primary);
+  color: white;
+  border-radius: 16px 16px 0 0;
+  padding: 1.5rem;
+}
+
+.comparison-table {
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparison-table th {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  font-weight: 600;
+  border: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+.comparison-table td {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.entry-column {
+  background: var(--entry-bg) !important;
+  color: var(--entry-color) !important;
+}
+
+.mid-column {
+  background: var(--mid-bg) !important;
+  color: #b45309 !important;
+}
+
+.professional-column {
+  background: var(--professional-bg) !important;
+  color: var(--professional-color) !important;
+}
+
+/* Checklist Styles */
+.checklist-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.checklist-card .card-header {
+  background: var(--gradient-primary);
+  color: white;
+  border-radius: 16px 16px 0 0;
+  padding: 1.5rem;
+}
+
+.checklist {
+  margin-top: 1rem;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.checklist-item:hover {
+  background: var(--bg-light);
+}
+
+.checklist-item input[type="checkbox"] {
+  margin-right: 0.75rem;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.checklist-item label {
+  cursor: pointer;
+  margin: 0;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* Step Divider */
+.step-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--primary-color) 50%, transparent 100%);
+  margin: 3rem 0;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .step-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .step-number-large {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .getting-started-section {
+    padding: 2rem 0;
+  }
+  
+  .level-selector-card .nav-pills .nav-link {
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+  }
+  
+  .detailed-step-section {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .step-number-large {
+    font-size: 3rem;
+  }
+  
+  .step-main-title {
+    font-size: 1.5rem;
+  }
+  
+  .step-main-description {
+    font-size: 1rem;
+  }
+  
+  .step-icon {
+    font-size: 2rem;
+  }
+  
+  .step-icon-large {
+    font-size: 2.5rem;
+  }
+  
+  .product-image-container {
+    height: 180px;
+  }
+  
+  .product-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  
+  .amazon-link-btn {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+  
+  .budget-item {
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+  }
+  
+  .comparison-table {
+    font-size: 0.875rem;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .level-selector-card .nav-pills {
+    flex-direction: column;
+  }
+  
+  .level-selector-card .nav-pills .nav-link {
+    margin: 0.25rem 0;
+    text-align: center;
+  }
+  
+  .step-header {
+    gap: 0.75rem;
+  }
+  
+  .step-number-large {
+    font-size: 2.5rem;
+  }
+  
+  .step-main-title {
+    font-size: 1.25rem;
+  }
+  
+  .level-header {
+    padding: 1rem;
+  }
+  
+  .tips-card .card-header {
+    padding: 0.75rem 1rem;
+  }
+  
+  .detailed-step-section {
+    padding: 1rem;
+  }
+  
+  .budget-summary-card .card-header,
+  .comparison-card .card-header,
+  .checklist-card .card-header {
+    padding: 1rem;
+  }
+  
+  .product-image-container {
+    height: 140px;
+  }
+  
+  .product-name {
+    font-size: 0.9rem;
+  }
+  
+  .product-description {
+    font-size: 0.75rem;
+  }
+  
+  .placeholder-icon {
+    font-size: 2rem;
+  }
+}
