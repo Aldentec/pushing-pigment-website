@@ -929,7 +929,7 @@ export const allProducts = [
       "Reliable performance",
       "Good value for money"
     ],
-    isRecommended: false,
+    isRecommended: true,
     experienceLevel: "mid"
   },
   {

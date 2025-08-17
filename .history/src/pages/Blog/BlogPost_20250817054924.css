@@ -1,0 +1,359 @@
+/* Individual Blog Post Styles */
+.blog-post-page {
+  min-height: 100vh;
+  padding: 2rem 0 4rem;
+}
+
+.blog-breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--text-light);
+}
+
+/* Post Header */
+.blog-post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.post-meta-details {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.post-author {
+  font-weight: 500;
+}
+
+.post-date, .post-read-time {
+  opacity: 0.8;
+}
+
+.post-tags .tag-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Featured Image */
+.featured-image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--bg-light);
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  color: var(--text-light);
+}
+
+.image-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Post Content */
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+}
+
+.post-content h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem;
+  color: var(--text-dark);
+  border-bottom: 2px solid var(--bg-light);
+  padding-bottom: 0.5rem;
+}
+
+.post-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  color: var(--text-dark);
+}
+
+.post-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem;
+  color: var(--text-dark);
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.post-content ul, .post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.post-content strong {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.post-content blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: var(--bg-light);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+
+/* Affiliate Sections */
+.affiliate-section {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 2px solid #0ea5e9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.affiliate-btn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.affiliate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+
+.affiliate-note {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0;
+  font-style: italic;
+}
+
+/* Shopping List Styles */
+.shopping-list {
+  background: var(--bg-light);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.shopping-list h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.shopping-list ul {
+  margin-bottom: 1.5rem;
+}
+
+/* Related Posts */
+.related-posts-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+  text-align: center;
+  position: relative;
+}
+
+.related-posts-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.related-post-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.related-post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.related-image-container {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  background: var(--bg-light);
+}
+
+.related-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.related-post-card:hover .related-image {
+  transform: scale(1.05);
+}
+
+.related-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  color: var(--text-light);
+}
+
+.related-icon {
+  font-size: 1.5rem;
+}
+
+.related-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+.related-title a {
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.related-title a:hover {
+  color: var(--primary-color);
+}
+
+.related-excerpt {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-post-page {
+    padding: 1rem 0 3rem;
+  }
+  
+  .post-title {
+    font-size: 2rem;
+  }
+  
+  .featured-image-container {
+    height: 250px;
+  }
+  
+  .post-content {
+    font-size: 1rem;
+  }
+  
+  .post-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .post-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .affiliate-section {
+    padding: 1rem;
+  }
+  
+  .affiliate-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .related-image-container {
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-title {
+    font-size: 1.75rem;
+  }
+  
+  .featured-image-container {
+    height: 200px;
+  }
+  
+  .post-content {
+    font-size: 0.95rem;
+  }
+  
+  .post-content ul, .post-content ol {
+    padding-left: 1.5rem;
+  }
+  
+  .affiliate-section {
+    margin: 1.5rem -1rem;
+    border-radius: 0;
+  }
+}

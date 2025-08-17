@@ -15,9 +15,6 @@ import Home from './pages/Home/Home';
 import Tutorials from './pages/Tutorials/Tutorials';
 import Products from './pages/Products/Products';
 import GettingStarted from './pages/GettingStarted/GettingStarted';
-import Blog from './pages/Blog/Blog';
-import BlogPost from './pages/Blog/BlogPost';
-
 
 function App() {
   return (
@@ -32,8 +29,6 @@ function App() {
               <Route path="/getting-started" element={<GettingStarted />} />
               <Route path="/products" element={<Products />} />
               <Route path="/tutorials" element={<Tutorials />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:slug" element={<BlogPost />} />
             </Routes>
           </main>
           <Footer />
