@@ -160,8 +160,8 @@ export const tutorialData = [
     id: 10,
     title: "the FIVE techniques every beginner should learn",
     description: "Getting started with miniature painting? Here are the five techniques every D&D, Warhammer and Miniature painter should learn and master before getting in to the advanced techniques.",
-    category: "Basics",
-    difficulty: "Beginner",
+    category: "Techniques",
+    difficulty: "Intermediate",
     duration: "43 min",
     instructor: "Squidmar",
     icon: "🖌⚔️",
@@ -174,22 +174,6 @@ export const tutorialData = [
     ],
     youtubeUrl: "https://www.youtube.com/watch?v=y93xpgeRev4",
     link: "#tutorial-10"
-  },
-  ,
-  {
-    id: 11,
-    title: "The Slapchop Technique! The Best way to Paint Miniatures Fast?",
-    description: "In this video we teach you how to Slapchop! Rob goes the through the technique in detail, using contrast paints over a drybrush to achieve a quick but effective paint job!",
-    category: "Techniques",
-    difficulty: "Intermediate",
-    duration: "16 min",
-    instructor: "The Honest Wargamer",
-    icon: "🖌⚔️",
-    skills: [
-      "Slapchop"
-    ],
-    youtubeUrl: "https://www.youtube.com/watch?v=bH3WGHw9eDw",
-    link: "#tutorial-11"
   }
 ];
 

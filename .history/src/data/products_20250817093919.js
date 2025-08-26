@@ -985,7 +985,7 @@ export const allProducts = [
     name: "The Army Painter Speedpaint 2.0 Starter Set",
     price: 47.00,
     category: "Paints",
-    rating: 4.6,
+    rating: 4.7,
     amazonLink: "https://amzn.to/4oFoWw8",
     imageUrl: "https://m.media-amazon.com/images/I/81vWK15I2rL._AC_SL1500_.jpg",
     features: [
@@ -1001,29 +1001,13 @@ export const allProducts = [
     name: "Vallejo Xpress Color Range",
     price: 291.60,
     category: "Paints",
-    rating: 5.0,
+    rating: 4.7,
     amazonLink: "https://amzn.to/3UtUxmT",
     imageUrl: "https://m.media-amazon.com/images/I/51xzWX-bQPL._AC_SL1000_.jpg",
     features: [
-      "Great for painting quickly",
+      "Great for painting quicklyt",
       "Comprehensive color range",
       "Perfect for beginners"
-    ],
-    isRecommended: true,
-    experienceLevel: "entry"
-  },
-  {
-    id: 63,
-    name: "Warhammer 40,000: Introductory Set",
-    price: 55.25,
-    category: "Miniatures",
-    rating: 4.6,
-    amazonLink: "https://amzn.to/45kl9Nm",
-    imageUrl: "https://m.media-amazon.com/images/I/71xJ-wzb0VL._AC_.jpg",
-    features: [
-      "Iconic miniatures with excellent detail",
-      "Everything needed to get started",
-      "Perfect for getting into the hobby"
     ],
     isRecommended: true,
     experienceLevel: "entry"

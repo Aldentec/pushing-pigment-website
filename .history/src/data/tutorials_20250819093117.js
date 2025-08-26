@@ -129,67 +129,16 @@ export const tutorialData = [
     id: 8,
     title: "I Hate Army Painting, So I Tried Sponging",
     description: "The video follows the painter's attempt to use sponging to paint a Warhammer model. They explore the technique's advantages and disadvantages, highlighting how it works best on simpler-shaped models, while presenting challenges on complex designs.",
-    category: "Techniques",
-    difficulty: "Intermediate",
-    duration: "16 min",
-    instructor: "Zumikito Miniatures",
+    category: "Miniature Types",
+    difficulty: "Beginner",
+    duration: "23 min",
+    instructor: "Duncan Rhodes Painting Academy",
     icon: "🖌⚔️",
     skills: [
       "Sponging"
     ],
     youtubeUrl: "https://www.youtube.com/watch?v=FRfFwOVD-Ug",
     link: "#tutorial-8"
-  },
-  {
-    id: 9,
-    title: "Ultimate guide to basing your warhammer miniatures - everything you need to know",
-    description: "Today is the day where we teach you all how to become true basing gods! After today you'll be able to take your Warhammer minis to the next level, know everything you need to know about materials and of course we'll make it all as easy as possible for you to follow!",
-    category: "Techniques",
-    difficulty: "Intermediate",
-    duration: "43 min",
-    instructor: "Squidmar",
-    icon: "🖌⚔️",
-    skills: [
-      "Basing",
-      "Materials"
-    ],
-    youtubeUrl: "https://www.youtube.com/watch?v=UrlWQMQ4-cM",
-    link: "#tutorial-9"
-  },
-  {
-    id: 10,
-    title: "the FIVE techniques every beginner should learn",
-    description: "Getting started with miniature painting? Here are the five techniques every D&D, Warhammer and Miniature painter should learn and master before getting in to the advanced techniques.",
-    category: "Basics",
-    difficulty: "Beginner",
-    duration: "43 min",
-    instructor: "Squidmar",
-    icon: "🖌⚔️",
-    skills: [
-      "Base coating",
-      "Layering",
-      "Wet on wet",
-      "Edge highlighting",
-      "Drybrushing"
-    ],
-    youtubeUrl: "https://www.youtube.com/watch?v=y93xpgeRev4",
-    link: "#tutorial-10"
-  },
-  ,
-  {
-    id: 11,
-    title: "The Slapchop Technique! The Best way to Paint Miniatures Fast?",
-    description: "In this video we teach you how to Slapchop! Rob goes the through the technique in detail, using contrast paints over a drybrush to achieve a quick but effective paint job!",
-    category: "Techniques",
-    difficulty: "Intermediate",
-    duration: "16 min",
-    instructor: "The Honest Wargamer",
-    icon: "🖌⚔️",
-    skills: [
-      "Slapchop"
-    ],
-    youtubeUrl: "https://www.youtube.com/watch?v=bH3WGHw9eDw",
-    link: "#tutorial-11"
   }
 ];
 
